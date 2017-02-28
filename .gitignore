@@ -30,4 +30,4 @@ bower_components
 .sass-cache
 
 # App
-public
+dist
