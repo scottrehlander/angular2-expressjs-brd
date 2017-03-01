@@ -5,10 +5,8 @@
  */
 
 import { app } from '../app';
-import appConfig = require('../config/app.config');
+import config = require('../config/app.config');
 import * as http from 'http';
-
-const config = appConfig.get();
 
 /**
  * Get port from environment and store in Express.

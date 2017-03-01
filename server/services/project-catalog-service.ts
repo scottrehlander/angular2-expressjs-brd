@@ -1,7 +1,5 @@
-import appConfig = require('../config/app.config');
-
-const request = require('request');
-const config = appConfig.get();
+import config = require('../config/app.config');
+import request = require('request');
 
 export function getProjectsForUser(user : string) {
     return new Promise((resolve, reject) => {
