@@ -1,0 +1,2 @@
+# This .gitignore enables the folder to be stored in the repo
+*.logs
