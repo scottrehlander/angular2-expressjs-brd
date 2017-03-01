@@ -6,7 +6,7 @@ const config = {
         "digest": "sha256"
     },
     "logging": {
-        "filepath": "logs/adlp.log",
+        "filepath": "logs/server_log",
         "level": "silly",
         "json": false
     }

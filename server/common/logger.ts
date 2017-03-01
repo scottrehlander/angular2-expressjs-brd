@@ -1,8 +1,10 @@
 import winston = require("winston");
+require('winston-daily-rotate-file');
 import config = require('../config/app.config');
 
-const transport = new winston.transports.File({ 
-    filename: config.logging.filepath,
+const transport = new winston.transports.DailyRotateFile({ 
+    filename: `${config.logging.filepath}_`,
+    datePattern: 'yyyy-MM-dd',
     handleExceptions: true,
     humanReadableUnhandledException: true,
     level: config.logging.level,
