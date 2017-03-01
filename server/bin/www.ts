@@ -5,17 +5,19 @@
  */
 
 import { app } from '../app';
-import { serverPort } from '../config';
+import appConfig = require('../config/app.config');
 import * as http from 'http';
+
+const config = appConfig.get();
 
 /**
  * Get port from environment and store in Express.
  */
-const port = normalizePort(process.env.PORT || serverPort);
+const port = normalizePort(config.server.serverPort);
 app.set('port', port);
 
 /**
- * Create HTTP server.
+ * Create HTTP server.1
  */
 const server = http.createServer(app);
 
