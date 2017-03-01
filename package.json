@@ -1,5 +1,5 @@
 {
-  "name": "Assay Data Loading Portal (ADLP)",
+  "name": "broad-adlp",
   "version": "1.0.0",
   "description": "Assay data loading tool for the Broad Institute",
   "main": "server/app.js",
