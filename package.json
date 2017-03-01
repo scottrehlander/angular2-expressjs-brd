@@ -8,7 +8,7 @@
   "scripts": {
     "start": "concurrently --kill-others \"ng serve --aot=true --proxy-config proxy.conf.json\" \"npm run _server:run\"",
     "lint": "tslint \"src/**/*.ts\"",
-    "test": "ng test --watch=false",
+    "test": "mocha \"server/test/**/*.ts\"",
     "pree2e": "webdriver-manager update",
     "e2e": "protractor",
     "build": "ng build --prod --sm=false --aot=true --output-path=dist/client && npm run _server:build",
@@ -16,9 +16,9 @@
     "_server:build": "tsc -p ./server",
     "postinstall": "npm run build"
   },
-  "author": "Vlado Tešanović",
+  "author": "Scott Rehlander",
   "repository": {
-    "url": "https://github.com/vladotesanovic/angular2-express-starter"
+    "url": "https://github.com/scottrehlander/angular2-expressjs-brd.git"
   },
   "private": true,
   "dependencies": {
@@ -63,6 +63,7 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
+    "codelyzer": "^2.0.0-beta.4",
     "concurrently": "^3.1.0",
     "jasmine-core": "2.4.1",
     "jasmine-spec-reporter": "2.5.0",
@@ -71,9 +72,10 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "^0.2.1",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.9",
     "nodemon": "^1.11.0",
     "protractor": "4.0.9",
-    "codelyzer": "^2.0.0-beta.4",
     "webdriver-manager": "10.2.5"
   }
 }
