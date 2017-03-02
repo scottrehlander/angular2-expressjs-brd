@@ -13,5 +13,5 @@ const config = {
 };
 
 export = process.env.node_env == 'production' ? 
-    Object.assign(config, require('./app.config.prod').get()) :
-    Object.assign(config, require('./app.config.dev').get());
+    Object.assign(config, require('./app.config.prod')) :
+    Object.assign(config, require('./app.config.dev'));
