@@ -6,6 +6,7 @@ const config = {
         "digest": "sha256"
     },
     "logging": {
+        "enableConsoleLogger": true,
         "filepath": "logs/server_log",
         "level": "silly",
         "json": false
