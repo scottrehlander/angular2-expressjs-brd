@@ -1,6 +1,6 @@
 ##Required installs
 
-#Application
+###Application
 
 Node v6.10.0
 
@@ -8,7 +8,7 @@ npm 4.2.0
 
 Typescript 2.2.1
 
-#Database
+###Database
 
 Python 2.7
 
