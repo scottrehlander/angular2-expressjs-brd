@@ -12,4 +12,4 @@ Typescript 2.2.1
 
 Python 2.7
 
-Oracle Instant Client 12.1.0.2 (Basic and SDK)
+Oracle Instant Client 12.1.0.2 (Basic, SQL*Plus, and SDK)
