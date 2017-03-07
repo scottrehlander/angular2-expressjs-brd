@@ -14,7 +14,7 @@
     "build": "ng build --prod --sm=false --aot=true --output-path=dist/client && npm run _server:build",
     "_server:run": "tsc -p ./server && concurrently \"tsc -w -p ./server\" \"nodemon dist/server/bin/www.js\" ",
     "_server:build": "tsc -p ./server",
-    "_server:generate-stubs": "node ./server/stubs/generate-stubs.js -c \"localhost/XE\" -d ./server/stubs/sql/cleanup -u system -p oracle && node ./server/stubs/generate-stubs.js -c \"localhost/XE\" -d ./server/stubs/sql -u resultdb -p oracle",
+    "_server:generate-stubs": "ts-node --project ./server ./server/stubs/generate-stubs.ts",
     "postinstall": "npm run build"
   },
   "author": "Scott Rehlander",
@@ -82,6 +82,7 @@
     "nodemon": "^1.11.0",
     "protractor": "4.0.9",
     "ts-mocha": "^1.0.3",
+    "ts-node": "^1.2.1",
     "webdriver-manager": "10.2.5"
   }
 }
