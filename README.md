@@ -8,6 +8,8 @@ npm 4.2.0
 
 Typescript 2.2.1
 
+ts-node
+
 ###Database
 
 Python 2.7
