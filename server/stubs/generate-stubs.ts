@@ -48,7 +48,7 @@ function generateStubs() {
     function executeScript(dir, filename) {
         console.log('Exec script ' + pathUtil.join(dir, filename));
 
-        exec("ts-node --project \"./server\"" + " .\\" + pathUtil.join(dir, filename), {stdio:[0,1,2]});
+        exec("ts-node --project \"./server\" " + pathUtil.join(dir, filename), {stdio:[0,1,2]});
     }
 
     // Run the cleanup
